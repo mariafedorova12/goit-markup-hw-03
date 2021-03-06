@@ -37,6 +37,7 @@ ol {
 
 img {
   display: block;
+  max-width: 370px;
 }
 
 .link {
@@ -98,11 +99,6 @@ img {
   padding-bottom: 24px;
   border: 1px solid;
   border-color: transparent;
-}
-
-.container {
-  display: flex;
-  align-items: center;
 }
 
 .navigation {
@@ -305,7 +301,7 @@ img {
 
 /*======= CREW ======= */
 
-crew .container {
+.crew .container {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
@@ -323,7 +319,7 @@ crew .container {
 
 .crew-list {
   width: 270px;
-  flex-basis: calc(100% / 4 -30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -342,20 +338,17 @@ crew .container {
   font-size: 16px;
   line-height: 1.19;
   color: var(--text-description-color);
+}
 
 /*======= END CREW ======*/
 
 /*======= PORTFOLIO =======*/
 
-.portfolio .container {
-  padding-top: var(--section-pt);
-}
-
 .item {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  flex-basis: calc((100% / 5)-8px);
+  flex-basis: calc((100% / 5)- 8px);
   margin-left: -8px;
   margin-top: -8px;
   padding-top: 174px;
@@ -388,10 +381,6 @@ crew .container {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.services .container {
-  padding-top: 34px;
-}
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -404,7 +393,7 @@ crew .container {
 .services-list-item {
   border: 1px solid;
   border-color: transparent;
-  flex-basis: calc((100%-3)-30px);
+  flex-basis: calc((100%-3) - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
