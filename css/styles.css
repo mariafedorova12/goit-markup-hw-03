@@ -37,7 +37,6 @@ ol {
 
 img {
   display: block;
-  max-width: 370px;
 }
 
 .link {
@@ -274,6 +273,7 @@ img {
 /* ======= SERVICES ========= */
 
 .services-title {
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -295,7 +295,6 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 /*====== END SERVICES ====== */
 
@@ -307,12 +306,14 @@ img {
 }
 
 .crew-title {
+  text-align: center;
   margin-bottom: 50px;
 }
 
 .crew-item {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -322,6 +323,13 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.crew-list-wrapper {
+  padding: 30px 59px;
+}
+.crew-list-title {
+  margin-bottom: 10px;
 }
 
 .crew {
@@ -344,11 +352,15 @@ img {
 
 /*======= PORTFOLIO =======*/
 
+.portfolio .container {
+  padding-top: var(--section-pt);
+}
+
 .item {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  flex-basis: calc((100% / 5)- 8px);
+  justify-content: center;
+  flex-basis: calc((100% / 5) - 8px);
   margin-left: -8px;
   margin-top: -8px;
   padding-top: 174px;
@@ -358,6 +370,22 @@ img {
 .portfolio-item {
   margin-left: 8px;
   margin-top: 8px;
+}
+
+/*====== CARDS =======*/
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: calc((100% / 3) - 30px);
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.services-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .portfolio .button {
@@ -379,23 +407,6 @@ img {
   color: var(--button-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-bottom: var(--section-pb);
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.services-list-item {
-  border: 1px solid;
-  border-color: transparent;
-  flex-basis: calc((100%-3) - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
 }
 
 .portfolio-title {
