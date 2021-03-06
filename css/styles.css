@@ -65,10 +65,9 @@ img {
 /*========== CONTAINER ==========*/
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
-  padding-left: 0 15px;
-  padding-right: 0 15px;
+  padding: 0 15px;
 }
 
 /*======= LOGO =======*/
@@ -278,12 +277,6 @@ img {
 
 /* ======= SERVICES ========= */
 
-.services .container {
-  display: flex;
-  padding-top: 47px;
-  padding-bottom: var(--section-pb);
-}
-
 .services-title {
   margin-bottom: 50px;
 }
@@ -296,6 +289,7 @@ img {
 }
 
 .services-list {
+  width: 370px;
   flex-basis: calc((100% / 3) -30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -311,7 +305,7 @@ img {
 
 /*======= CREW ======= */
 
-.crew .container {
+crew .container {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
@@ -334,10 +328,6 @@ img {
   margin-top: 30px;
 }
 
-.our-crew {
-  padding: 59px;
-}
-
 .crew {
   background-color: var(--secondary-background-color);
 }
@@ -352,7 +342,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   color: var(--text-description-color);
-}
 
 /*======= END CREW ======*/
 
