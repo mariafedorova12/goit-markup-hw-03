@@ -96,7 +96,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid;
+  border-bottom: 1px solid;
   border-color: #ececec;
 }
 
@@ -251,7 +251,7 @@ img {
 
 .about-list-item {
   width: 270px;
-  flex-basis: calc(100% / 4 -30px);
+  flex-basis: calc((100% / 4) - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -358,12 +358,8 @@ img {
 
 /*======= PORTFOLIO =======*/
 
-.portfolio .container {
+.portfolio .item {
   padding-top: 174px;
-  padding-bottom: var(--section-pb);
-}
-
-.item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -382,6 +378,7 @@ img {
 /*====== CARDS =======*/
 
 .portfolio-list {
+  padding-bottom: var(--section-pb);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
