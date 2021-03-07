@@ -37,6 +37,7 @@ ol {
 
 img {
   display: block;
+  max-width: 370px;
 }
 
 .link {
@@ -96,10 +97,12 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.page-header {
   border-bottom: 1px solid;
   border-color: #ececec;
 }
-
 .navigation {
   display: flex;
   align-items: center;
@@ -110,7 +113,7 @@ img {
   align-items: center;
 }
 
-.-list-header:not(:last-child) {
+.navigation-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -119,7 +122,7 @@ img {
   margin-left: auto;
 }
 
-.mailto-link {
+.contact-item {
   margin-right: 50px;
 }
 
@@ -159,7 +162,10 @@ img {
 
 .footer.container {
   padding-top: 60px;
-  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer {
   background-color: var(--footer-background-color);
 }
 
@@ -175,7 +181,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--header-background-color);
 }
 
 .contact-list-item {
@@ -189,9 +194,9 @@ img {
 .hero-container {
   align-items: center;
   text-align: center;
-  width: 1600px;
-  height: 600px;
-  padding: 200px 452px;
+  max-width: 696px;
+  padding: 200px 0;
+  margin: 0 auto;
 }
 
 .hero {
@@ -200,6 +205,7 @@ img {
 
 .hero-title {
   text-align: center;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -210,8 +216,10 @@ img {
 }
 
 .modal-btn {
+  padding: 18px 32px;
+  justify-content: center;
   border: none;
-  margin-top: 30px;
+  margin: 0px;
   padding-bottom: 200px;
   font-weight: 700;
   font-size: 16px;
@@ -250,7 +258,6 @@ img {
 }
 
 .about-list-item {
-  width: 270px;
   flex-basis: calc((100% / 4) - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -273,6 +280,7 @@ img {
 /* ======= SERVICES ========= */
 
 .services .container {
+  padding-top: 47px;
   padding-bottom: var(--section-pb);
 }
 
@@ -330,9 +338,15 @@ img {
 }
 
 .crew-list-wrapper {
-  padding: 30px 59px;
+  padding: 15px 20px;
   border: 1px solid;
   border-color: #ececec;
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .crew-list-title {
   margin-bottom: 10px;
@@ -358,27 +372,50 @@ img {
 
 /*======= PORTFOLIO =======*/
 
-.portfolio .item {
-  padding-top: 174px;
+.portfolio-container {
+  padding-bottom: var(--section-pb);
+}
+
+.item {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  flex-basis: calc((100% / 5) - 8px);
-  margin-left: -8px;
-  margin-top: -8px;
-  padding-top: 174px;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .portfolio-item {
-  margin-left: 8px;
-  margin-top: 8px;
+  margin-right: 8px;
+}
+.portfolio-item:nth-last-child(5) {
+  margin-right: 8px;
+}
+.portfolio-container .button {
+  border: none;
+  text-align: center;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+  letter-spacing: 0.03em;
+  border: 0.5px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--button-hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*====== CARDS =======*/
 
 .portfolio-list {
-  padding-bottom: var(--section-pb);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -396,28 +433,8 @@ img {
 .content-wrapper {
   padding: 20px 24px;
   border: 1px solid;
+  border-top: 0;
   border-color: #ececec;
-}
-
-.portfolio .button {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: 0.5px;
-  background-color: var(--secondary-background-color);
-  border-radius: 4px;
-  cursor: pointer;
-}
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--button-hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
