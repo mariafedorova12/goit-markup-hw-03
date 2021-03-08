@@ -74,7 +74,6 @@ img {
 /*======= LOGO =======*/
 
 .logo-title {
-  margin-right: 93px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -85,6 +84,7 @@ img {
 
 .logo-titte-up {
   color: var(--title-color);
+  margin-right: 93px;
 }
 
 .logo-title-down {
