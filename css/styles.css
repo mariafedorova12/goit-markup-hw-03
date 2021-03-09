@@ -73,6 +73,10 @@ img {
 
 /*======= LOGO =======*/
 
+.footer .logo-title {
+  margin-right: 0;
+}
+
 .logo-title {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -95,8 +99,6 @@ img {
 .page-header .container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .page-header {
@@ -108,26 +110,26 @@ img {
   align-items: center;
 }
 
-.navigation-list-header {
-  display: flex;
+.navigation-item {
+  display: inline-block;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .contact-item {
   display: flex;
   margin-left: auto;
 }
-
-.contact-item {
+.contact-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .navigation-link {
-  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -374,23 +376,22 @@ img {
 
 .portfolio-container {
   padding-bottom: var(--section-pb);
+  padding-top: var(--section-pb);
 }
 
 .item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
-.portfolio-item {
+.portfolio-item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-item:nth-last-child(5) {
-  margin-right: 8px;
-}
+
 .portfolio-container .button {
+  margin-right: 8px;
   border: none;
   text-align: center;
   padding: 6px 22px;
@@ -419,8 +420,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  flex-basis: calc((100% / 3) - 30px);
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -428,6 +427,7 @@ img {
 .services-list-item {
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc((100% / 3) - 30px);
 }
 
 .content-wrapper {
