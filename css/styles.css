@@ -78,6 +78,7 @@ img {
 }
 
 .logo-title {
+  margin-right: 93px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -88,7 +89,6 @@ img {
 
 .logo-titte-up {
   color: var(--title-color);
-  margin-right: 93px;
 }
 
 .logo-title-down {
@@ -135,6 +135,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .current {
   color: var(--accent-color);
 }
@@ -391,7 +392,6 @@ img {
 }
 
 .portfolio-container .button {
-  margin-right: 8px;
   border: none;
   text-align: center;
   padding: 6px 22px;
